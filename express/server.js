@@ -7,6 +7,10 @@ const bodyParser = require('body-parser');
 
 const router = express.Router();
 
+router.get('/', (req, res) => {
+  res.end();
+});
+
 app.use('/', (req, res) => {
   res.render(path.join(__dirname, '../index.ejs'), {
     title: "Home"
