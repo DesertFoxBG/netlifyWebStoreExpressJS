@@ -7,8 +7,8 @@ const bodyParser = require('body-parser');
 
 const router = express.Router();
 
-app.get('/', (req, res) => {
-  res.redirect(req.baseUrl + '/home');
+app.get('/home', (req, res) => {
+  res.end();
 });
 
 router.get('/another', (req, res) => res.json({ route: req.originalUrl }));
