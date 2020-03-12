@@ -4,20 +4,8 @@ const path = require('path');
 const serverless = require('serverless-http');
 const app = express();
 const bodyParser = require('body-parser');
-const Shoppy = require('Shoppy.gg');
-const shoppyAPI = new Shoppy.API('vD2i57Kuomb52deg0NBOUMxE0sOUbk2Ka1ZPZe85KUDc53FAwJ')
 
 const router = express.Router();
-
-function getItems() {
-  API.getProducts()
-    .then(data => {
-      console.log(data);
-    })
-    .catch(items => {
-      console.log(items);
-    });
-}
 
 router.get('/another', (req, res) => res.json({ route: req.originalUrl }));
 
