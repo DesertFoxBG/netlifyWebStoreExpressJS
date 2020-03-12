@@ -1,0 +1,19 @@
+
+.j {
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.menu {
+    height: 70%;
+}
+
+.active-menu-item {
+    background-color: #ccc !important;
+}
+
+.title {
+    width: 69%;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
